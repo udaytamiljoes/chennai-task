@@ -43,7 +43,7 @@ export const Calendar: React.FC<CalendarProps> = ({ data }) => {
   }
 
   const generateCalendarGrid = () => {
-    const days: JSX.Element[] = []
+    const days = []
     let current = startDate
 
     while (current <= endDate) {
