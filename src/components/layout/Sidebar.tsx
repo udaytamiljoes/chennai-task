@@ -75,7 +75,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     <span className="text-white font-bold text-lg">M</span>
                   </div>
                   {/* <h1 className="text-lg font-bold text-gray-900">MediCare Companion</h1> */}
-                  <h2 className="text-sm mt-2 font-600 text-gray-500">MediCare Companion</h2>
+                  <h2 className="text-sm mt-2 font-600 text-gray-500">MediCare Companion..</h2>
                 </div>
               </div>
               <button
