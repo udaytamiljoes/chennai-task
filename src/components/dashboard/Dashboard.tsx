@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Activity, Bell, ChevronDown, ChevronUp, ClipboardList, Plus, User } from 'lucide-react'
+import { Activity, Bell, ChevronDown, ChevronUp, ClipboardList, Plus, } from 'lucide-react'
 import DashboardStats from './DashboardStats'
 import { MedicationCard } from './MedicationCard'
 import AddMedicationModal from './AddMedicationModal'
@@ -7,7 +7,7 @@ import { Button } from '../ui/button'
 import { useMedication } from '../../contexts/MedicationContext'
 import { useAuth } from '../../contexts/AuthContext'
 import { Calendar } from './Calendar'
-import { format, isToday, isSameDay, startOfDay, addDays } from 'date-fns'
+import {  isToday, startOfDay, addDays } from 'date-fns'
 
 export const Dashboard: React.FC = () => {
   const { medications, medicationLogs, getMedicationLogsForDate } = useMedication()
