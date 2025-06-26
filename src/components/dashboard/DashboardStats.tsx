@@ -1,46 +1,46 @@
-import React from 'react'
-import { TrendingUp, Calendar, Target, Award, User } from 'lucide-react'
+
+import { User } from 'lucide-react'
 import { useMedication } from '../../contexts/MedicationContext'
 import { useAuth } from '../../contexts/AuthContext'
 function DashboardStats() {
   const { adherenceStats } = useMedication()
   const { currentRole } = useAuth()
 
-  const stats = [
-    {
-      label: 'Today\'s Progress',
-      value: `${adherenceStats.takenToday}/${adherenceStats.totalMedications}`,
-      percentage: adherenceStats.adherencePercentage,
-      icon: Target,
-      color: 'primary',
-      bgColor: 'bg-primary-50',
-      iconColor: 'text-primary-600'
-    },
-    {
-      label: 'Adherence Rate',
-      value: `${adherenceStats.adherencePercentage}%`,
-      icon: TrendingUp,
-      color: 'success',
-      bgColor: 'bg-success-50',
-      iconColor: 'text-success-600'
-    },
-    {
-      label: 'Current Streak',
-      value: `${adherenceStats.currentStreak} days`,
-      icon: Calendar,
-      color: 'secondary',
-      bgColor: 'bg-secondary-50',
-      iconColor: 'text-secondary-600'
-    },
-    {
-      label: 'Best Streak',
-      value: `${adherenceStats.longestStreak} days`,
-      icon: Award,
-      color: 'accent',
-      bgColor: 'bg-orange-50',
-      iconColor: 'text-orange-600'
-    }
-  ]
+  // const stats = [
+  //   {
+  //     label: 'Today\'s Progress',
+  //     value: `${adherenceStats.takenToday}/${adherenceStats.totalMedications}`,
+  //     percentage: adherenceStats.adherencePercentage,
+  //     icon: Target,
+  //     color: 'primary',
+  //     bgColor: 'bg-primary-50',
+  //     iconColor: 'text-primary-600'
+  //   },
+  //   {
+  //     label: 'Adherence Rate',
+  //     value: `${adherenceStats.adherencePercentage}%`,
+  //     icon: TrendingUp,
+  //     color: 'success',
+  //     bgColor: 'bg-success-50',
+  //     iconColor: 'text-success-600'
+  //   },
+  //   {
+  //     label: 'Current Streak',
+  //     value: `${adherenceStats.currentStreak} days`,
+  //     icon: Calendar,
+  //     color: 'secondary',
+  //     bgColor: 'bg-secondary-50',
+  //     iconColor: 'text-secondary-600'
+  //   },
+  //   {
+  //     label: 'Best Streak',
+  //     value: `${adherenceStats.longestStreak} days`,
+  //     icon: Award,
+  //     color: 'accent',
+  //     bgColor: 'bg-orange-50',
+  //     iconColor: 'text-orange-600'
+  //   }
+  // ]
 
   return (
     <div

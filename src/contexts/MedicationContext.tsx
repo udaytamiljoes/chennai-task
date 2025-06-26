@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import type { Medication, MedicationLog, AdherenceStats } from '.././types'
-import { format, isToday, startOfDay, differenceInDays } from 'date-fns'
+import { format, isToday } from 'date-fns'
 
 interface MedicationContextType {
   medications: Medication[]

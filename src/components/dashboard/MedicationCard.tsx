@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Clock, Check, Camera, MoreVertical, EditIcon, Trash, X } from 'lucide-react'
+import { Clock, Check, Camera, EditIcon, Trash, X } from 'lucide-react'
 import type { Medication } from '../../types'
 import { useMedication } from '../../contexts/MedicationContext'
 import { Button } from '../ui/button'

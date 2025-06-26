@@ -1,5 +1,5 @@
-import React from 'react';
-import { Clock, Camera, X } from 'lucide-react';
+
+import { Clock, Camera, } from 'lucide-react';
 import { Button } from '../ui/button';
 import { useMedication } from '../../contexts/MedicationContext';
 
@@ -7,7 +7,7 @@ function Taken() {
     const { medicationLogs, handleRemove } = useMedication();
     return (
         <div className="bg-white rounded-xl p-6 w-full max-w-2xl shadow-lg border border-gray-100">
-            {/* Header */}
+           
             <div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
                 <h3 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
                     <Clock className="text-blue-500" size={20} />
@@ -15,7 +15,7 @@ function Taken() {
                 </h3>
             </div>
 
-            {/* Content */}
+           
             {medicationLogs.length === 0 ? (
                 <div className="text-center py-8 rounded-lg bg-gray-50">
                     <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
