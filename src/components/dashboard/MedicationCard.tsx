@@ -158,14 +158,16 @@ export const MedicationCard: React.FC<MedicationCardProps> = ({ medication, onEd
           </button>
 
           <div className="flex space-x-2">
-            <Button
+            {/* <Button
               size="sm"
               variant="ghost"
               className="p-2"
             >
               <Camera size={16} />
-            </Button>
+            </Button> */}
             <Button
+                          style={{color:'#6B21A8', backgroundColor:'#F3E8FF', borderColor:'#C4B5FD' }}
+
               size="sm"
                              className={`px-4 py-3 flex items-cente justify-between rounded-lg border bg-purple-50 text-black text-sm font-medium hover:text-gray-900 border-purple-300`}
 

@@ -362,6 +362,7 @@ export const Dashboard: React.FC = () => {
                 </p>
               </div>
               <Button
+              style={{color:'#6B21A8', backgroundColor:'#F3E8FF', borderColor:'#C4B5FD' }}
                 className={`px-4 py-3 flex items-cente justify-betwee rounded-lg border bg-purple-50 text-black text-sm font-medium hover:text-gray-900 border-purple-300`}
                 // className="text-red-700 bg-transparent border border-red-700 hover:bg-red-50 px-4 py-2 rounded-md transition-colors duration-200 flex items-center"
                 onClick={() => setShowAddModal(true)}
