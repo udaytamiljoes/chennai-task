@@ -75,7 +75,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     <span className="text-white font-bold text-lg">M</span>
                   </div>
                   {/* <h1 className="text-lg font-bold text-gray-900">MediCare Companion</h1> */}
-                  <h2 className="text-sm mt-2 font-600 text-gray-500">MediCare Companion..</h2>
+                  <h2 className="text-sm mt-2 font-600 text-gray-500">MediCare Companion...</h2>
                 </div>
               </div>
               <button
@@ -161,7 +161,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               className="w-full flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-lg transition"
             >
               <LogOut size={20} className="flex-shrink-0" />
-              <span className="text-sm font-medium">Sign Out</span>
+              <span className="text-sm font-medium">Sign Out</span>..
             </button>
           </div>
         </div>
